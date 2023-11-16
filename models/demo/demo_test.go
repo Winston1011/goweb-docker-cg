@@ -143,7 +143,6 @@ func TestUpdate(t *testing.T) {
 
 /*
 	开启事务一定要注意提交/回滚事务，否则可能会导致db连接泄露的问题，进而引起服务的阻塞问题。
-	事务注意事项参考： https://wiki.zuoyebang.cc/pages/viewpage.action?pageId=345847832
 */
 func TestDemo_Transaction(t *testing.T) {
 	// 开始事务

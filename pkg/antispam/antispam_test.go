@@ -24,7 +24,7 @@ func TestAppCheck(t *testing.T) {
 		Cuid:  "955C675F1FC148F19C9183E4118DABEB",
 	}
 	b, _ := json.Marshal(p)
-	newR := httptest.NewRequest("POST", "http://pluto.zuoyebang.com/antispam-server/gettoken", bytes.NewBuffer(b))
+	newR := httptest.NewRequest("POST", "http://pluto.epochdz.com/antispam-server/gettoken", bytes.NewBuffer(b))
 	newR.PostForm = make(url.Values)
 	newR.Form = make(url.Values)
 	newR.PostForm["appId"] = []string{"iot_app"}

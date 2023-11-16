@@ -18,7 +18,6 @@ import (
 	"goweb-docker-cg/pkg/golib/v2/zlog"
 )
 
-// json tag 使用示例，更多请参考: http://wiki.zuoyebang.cc/display/Infrastructure/03+struct+tag
 type BuyCourseInfo struct {
 	// 使用 json tag 重定义json中key的名字
 	OrderID string `json:"orderID"`

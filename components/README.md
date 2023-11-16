@@ -1,7 +1,3 @@
-# go框架错误规范
-这里是一个按照 【[框架错误规范](http://wiki.zuoyebang.cc/pages/viewpage.action?pageId=155601339)】给出的最佳实践，
-[完整规范请查看wiki>>](http://wiki.zuoyebang.cc/pages/viewpage.action?pageId=155601339)
-
 
 ## 错误的定义
 

@@ -770,7 +770,7 @@ func (c *Context) ShouldBindBodyWith(obj any, bb binding.BindingBody) (err error
 // If the headers are not syntactically valid OR the remote IP does not correspond to a trusted proxy,
 // the remote IP (coming from Request.RemoteAddr) is returned.
 func (c *Context) ClientIP() string {
-	// zyb-customized clientIp()
+	// epoch-customized clientIp()
 	if c.engine.ForwardedByClientIP && c.engine.RemoteIPHeaders != nil {
 		for _, headerName := range c.engine.RemoteIPHeaders {
 			ip, valid := c.engine.validateHeader(c.requestHeader(headerName))

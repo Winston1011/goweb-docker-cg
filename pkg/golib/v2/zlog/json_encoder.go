@@ -22,9 +22,9 @@ func defaultHook(_ *string, _ []Field) {
 
 }
 
-// RegisterZYBJSONEncoder registers a special jsonEncoder under "zyb-json" name.
+// RegisterZYBJSONEncoder registers a special jsonEncoder under "epoch-json" name.
 func RegisterZYBJSONEncoder() error {
-	return zap.RegisterEncoder("zyb-json", func(cfg zapcore.EncoderConfig) (zapcore.Encoder, error) {
+	return zap.RegisterEncoder("epoch-json", func(cfg zapcore.EncoderConfig) (zapcore.Encoder, error) {
 		return NewZYBJSONEncoder(cfg), nil
 	})
 }

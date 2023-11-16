@@ -7,7 +7,6 @@ import (
 
 /*
 	Kubernetes使用就绪性探针（readiness probes）来实现探测服务是否准备好接收流量
-	详细参考： http://wiki.zuoyebang.cc/pages/viewpage.action?pageId=109834312
 
 	golib中默认 ready探针，业务可以根据具体使用场景实现自己的探针，
 	在 Bootstrap 前通过 base.RegReadyProbe(probe.Ready) 注册探针即可。

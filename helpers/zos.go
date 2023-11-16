@@ -1,0 +1,15 @@
+package helpers
+
+import (
+	"goweb-docker-cg/conf"
+
+	"goweb-docker-cg/pkg/golib/v2/zos"
+)
+
+var Bucket zos.Bucket
+
+func InitZos() {
+	bucketList := zos.NewBucket(conf.RConf.Zos)
+	// 注意这里的 zyb-inf-callcenter 是从 OP老师 那申请的 bucket
+	Bucket = bucketList["zyb-ship"]
+}

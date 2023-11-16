@@ -1,0 +1,19 @@
+demo:
+  # 调用下游的服务名称
+  service: demo
+  # 请求完整地址
+  domain: http://127.0.0.1:8080
+  # 超时配置，time.Duration 类型
+  timeout: 300ms
+  # 到该服务的最大空闲连接数
+  maxIdleConns: 100
+  # 空闲连接超时关闭时间
+  idleConnTimeout: 300s
+  # 重试次数，最多执行retry+1次
+  retry: 1
+  # trace功能，打印请求各阶段耗时，调试功能，非必须不要打开
+  httpStat: false
+  # debug 日志中展示的请求信息(params 字段)，防止请求体过大只能通过修改日志级别解决
+  maxReqBodyLen: 10
+  # debug 日志中展示的请求信息(responseBody 字段)，防止响应信息过大只能通过修改日志级别解决
+  maxRespBodyLen: 10
